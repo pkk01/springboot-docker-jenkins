@@ -23,7 +23,7 @@ pipeline {
 
         stage('Run Docker Container') {
             steps {
-                sh 'docker run -d -p 8080:8080 springboot-app:v1'
+                sh 'docker run -d -p 8099:8099 springboot-app:v1'
             }
         }
     }
