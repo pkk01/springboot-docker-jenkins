@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone GitHub Repo') {
             steps {
-                git 'https://github.com/pkk01/springboot-docker-jenkins.git'
+                git branch: 'main', url: 'https://github.com/pkk01/springboot-docker-jenkins.git'
             }
         }
 
